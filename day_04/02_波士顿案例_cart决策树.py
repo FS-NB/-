@@ -23,7 +23,7 @@ from sklearn.tree import DecisionTreeRegressor, plot_tree
 import matplotlib.pyplot as plt
 
 data_url = "http://lib.stat.cmu.edu/datasets/boston"
-raw_df = pd.read_csv(data_url, sep=r"\s+", skiprows=22, header=None)
+raw_df = pd.read_csv(data_url, sep="\\s+", skiprows=22, header=None)
 print(raw_df)
 data = np.hstack([raw_df.values[::2, :], raw_df.values[1::2, :2]])
 target = raw_df.values[1::2, 2]
@@ -59,7 +59,6 @@ plot_tree(
     dtr,
     max_depth=10,  # 树深度
     filled=True,  # 填充颜色, 颜色深浅代表节点纯度
-    class_names=["died", "survived"]  # 类别名称
 )
-plt.savefig("titanic_dtr.png", dpi=150)
+plt.savefig("data/Boston.png", dpi=150)
 plt.show()
