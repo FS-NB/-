@@ -1,25 +1,8 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.egg-info/
-dist/
-build/
-
 # IDE
 .idea/
 *.iml
 *.ipr
 *.iws
-
-# Environment
-.env
-.venv
-env/
-venv/
-
-# Logs - 可选，如果需要保留日志文件请注释掉
-# log/
 
 # OS
 Thumbs.db
