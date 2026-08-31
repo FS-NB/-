@@ -1,9 +1,0 @@
-# IDE
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# OS
-Thumbs.db
-.DS_Store
